@@ -5,13 +5,14 @@ import Navbar from "./Components/Navbar";
 
 function SharedLayout() {
   return (
-    <div className="flex flex-col">
-      <Navbar />
-      <div className="grid grid-flow-row gap-6">
+    <>
+      <div className="grid grid-flow-row gap-2">
+        <Navbar />
         <Sidebar />
-        <Outlet />
+        <Outlet/>
       </div>
-    </div>
+      
+    </>
   );
 }
 

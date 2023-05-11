@@ -10,7 +10,7 @@ module.exports = {
         primary: "#A4C7C6",
         "dark-alt": "#1A1E1F",
         alt: "#A4C7C6",
-        "bg-color": "#1E1E1E",
+        "sidebar-bg": "#1E1E1E",
       },
     },
   },
