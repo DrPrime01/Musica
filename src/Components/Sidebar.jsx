@@ -34,20 +34,20 @@ function Sidebar() {
   ];
   return (
     <aside
-      className={`col-start-1 col-end-2 sm:col-start-auto sm:col-end-auto flex flex-col`}
+      className="flex flex-col"
     >
       <img
         src={menu}
-        className={`cursor-pointer absolute left-4 top-8 bg-none sm:hidden z-50`}
+        className={`cursor-pointer absolute left-4 top-8 bg-none sm:hidden z-[100]`}
         onClick={() => setOpen(!open)}
       />
       <div
-        className={`absolute ${
-          open ? "w-screen bg-dark-alt top-0 left-0 pt-20 pl-6 h-screen" : "w-0 px-5"
+        className={`absolute sm:static ${
+          open ? "w-screen bg-dark-alt top-0 left-0 pt-20 pl-6 h-screen z-[80]" : "w-0 px-5"
         } sm:px-0 sm:w-14 duration-300`}
       >
         <ul
-          className={`flex flex-col space-y-8 sm:mb-20 mb-7 ${
+          className={`flex flex-col space-y-9 mb-7 ${
             open ? "block" : "hidden"
           } sm:block sm:bg-dark-alt sm:p-2 sm:py-3 sm:rounded-[3.5rem]`}
           id="sidebar-links"
