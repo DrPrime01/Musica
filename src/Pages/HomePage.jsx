@@ -21,10 +21,10 @@ import NR7 from "../assets/Images/TopChartsImages/NR7.png";
 function HomePage() {
   return (
     <div className="flex flex-col grow">
-      <div className="flex flex-col sm:flex-row sm:space-x-10">
+      <div className="flex flex-col lg:flex-row lg:space-x-10">
         <section
           id="hero-section"
-          className="bg-[#609EAF] flex-2 rounded-2xl sm:rounded-3xl p-8 pr-16 flex flex-col sm:flex-row sm:justify-between"
+          className="bg-[#609EAF] lg:flex-2 rounded-2xl sm:rounded-3xl p-8 pr-16 flex flex-col sm:flex-row sm:justify-between"
         >
           <div className="flex flex-col sm:justify-between sm:w-1/2">
             <div className="mb-64 sm:mb-0">
@@ -67,12 +67,11 @@ function HomePage() {
         </section>
         <aside
           id="top-charts"
-          className="mt-6 sm:mt-0 grow flex-1 items-center"
+          className="mt-6 lg:mt-0 grow flex-1 items-center"
         >
           <p className="font-bold text-2xl text-[#EFEEE0] mb-3">Top charts</p>
-          <div className="">
-            <div className="sm:space-y-5 flex sm:flex-col sm:space-x-0 space-x-5 overflow-x-auto">
-              <div className="flex-none w-5/6 sm:w-auto">
+            <div className="lg:space-y-5 flex lg:flex-col lg:space-x-0 space-x-5 flex-nowrap overflow-x-auto w-full">
+              <div className="flex-none w-5/6 lg:w-auto">
                 <div className="flex flex-row justify-between bg-dark-alt p-6 rounded-3xl">
                   <div className="sm:flex sm:space-x-5">
                     <img src={GoldenTunes} alt="cover image" />
@@ -95,7 +94,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="flex-none w-5/6 sm:w-auto">
+              <div className="flex-none w-5/6 lg:w-auto">
                 <div className="flex flex-row justify-between bg-dark-alt p-6 rounded-3xl">
                   <div className="sm:flex sm:space-x-5">
                     <img src={Reggae} alt="cover image" />
@@ -116,7 +115,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="flex-none w-5/6 sm:w-auto">
+              <div className="flex-none w-5/6 lg:w-auto">
                 <div className="flex flex-row justify-between bg-dark-alt p-6 rounded-3xl">
                   <div className="sm:flex sm:space-x-5">
                     <img src={TomorrowTunes} alt="cover image" />
@@ -138,13 +137,11 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
         </aside>
       </div>
       <div id="new-releases" className="mt-10 grow">
         <p className="font-bold text-2xl text-[#EFEEE0] mb-3">New Releases</p>
-        <div className="w-[23rem] sm:w-auto">
-          <div className="flex overflow-x-auto space-x-8">
+          <div className="flex flex-nowrap overflow-x-auto space-x-8 w-full">
             <div className="flex-none">
               <div>
                 <img
@@ -216,7 +213,6 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

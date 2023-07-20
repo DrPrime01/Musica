@@ -5,7 +5,7 @@ import SharedLayout from "./SharedLayout";
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark p-6 sm:p-8">
+    <div className="min-h-screen bg-dark p-6 sm:p-8 overflow-hidden w-full">
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
